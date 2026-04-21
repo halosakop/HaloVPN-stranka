@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloVPN</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#home" class="logo">
+            <i data-lucide="shield"></i> HaloVPN
+        </a>
+        <div class="nav-links">
+            <a href="#features">Vlastnosti</a>
+            <a href="#tech">Technológia</a>
+            <a href="#download">Stiahnutie</a>
+            <a href="https://github.com/halosakop/haloVPNv1/" class="github-btn"><i data-lucide="github" size="18"></i> GitHub</a>
+        </div>
+    </nav>
+    <section id="home">
+    </section>        
+
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-icon">
+            <i data-lucide="shield" size="40"></i>
+        </div>
+        <h1>HaloVPN</h1>
+        <div class="subtitle">Open Source • Bezpečnosť • Súkromie</div>
+        <p>Rýchla, open-source VPN vytvorená v jazyku Go. Chráňte svoje súkromie pomocou transparentného kódu, šifrovania a  multiplatformovej aplikácie vytvorenej v .NET MAUI.</p>
+        <div class="cta-group">
+            <a href="https://github.com/halosakop/haloVPNv1/" class="btn github-btn2"><i data-lucide="github" size="18"></i> GitHub</a>
+            <a href="#features" class="btn btn-secondary">Zisti viac</a>
+        </div>
+    </header>
+
+    <section id="features">
+        <h2>Prečo si vybrať HaloVPN?</h2>        
+        <div class="features-grid">
+            <div class="card">
+                <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                <h3>Military-Grade Šifrovanie</h3>
+                <p>AES-256 Šifrovanie chráni vaše dáta po celom svete.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="code-2"></i></div>
+                <h3>Open Source</h3>
+                <p>Každý riadok kódu je verejný. </p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="zap"></i></div>
+                <h3>Rýchlosť</h3>
+                <p>Vytvorený v programovacom jazyku GO pre maximálny výkon. Minimálna latencia. </p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="eye-off"></i></div>
+                <h3>Bez záznamov</h3>
+                <p>HaloVPN netrakuje, nezaznamenáva ani nepredáva vaše dáta. Vaša osobné údaje niesu náš produkt</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="lock"></i></div>
+                <h3>Protekcia</h3>
+                <p>Skrýva verejnú IP adresu používateľa a prekrýva ju IP adresou VPN servera</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="globe"></i></div>
+                <h3>Servery</h3>
+                <p>Vysoko rýchlostný server, ktorý sa nachádza v Numbergu. Nemecku so striktnými EU zákonmi o ochrane údajov.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech">
+        <h2>Vytvorené s modernými technológiami</h2>
+        <p class="section-desc">Pre výrobu boli použité najmodernejšie nástroje pre bezpečnosť a rýchlosť.</p>
+        
+        <div class="tech-grid">
+            <div class="card">
+                <span class="badge">Vysoký výkon</span>
+                <h3>Backend: Go</h3>
+                <p>jadro VPN systému je napísané v programovacom jazyku Go, ktoré poskytuje maximálny performance, memory safety a jednoduchosť bežania.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Multi-platfomrová</span>
+                <h3>Aplikácia: .NET MAUI</h3>
+                <p>.NET MAUI poskytuje natívne multi-platformové rozhranie. Jeden kód vie bežať na Windows, MacOS a Android.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Európeske zákony o osobných údajoch</span>
+                <h3>Server: Nuremberg, Germany</h3>
+                <p>Náš server sa nachádza v Numbergu (Nemecko), ktoré je členským štátom Európskej únie a je chránená GDPR zákonmi. Nemecké data centrá poskytujú vynikajúcu konektivitu.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="download">
+        <div class="github-cta">
+            <i data-lucide="github" size="48" style="margin-bottom: 20px;"></i>
+            <h2>Získaj HaloVPN</h2>
+            <p>Stiahni si zdrojový kód, postavaj si ho sám.<br>100% zadarmo, navždy.</p>
+            <br>
+            <a href="https://github.com/halosakop/haloVPNv1/" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i data-lucide="github" size="20"></i> Stiahnuť HaloVPN
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <i data-lucide="shield"></i> HaloVPN
+        </div>
+    </footer>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
