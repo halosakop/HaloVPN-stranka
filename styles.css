@@ -6,6 +6,7 @@
             --text-main: #ffffff;
             --text-dim: #94a3b8;
             --nav-bg: rgba(2, 6, 9, 0.8);
+
         }
 
         * {
@@ -13,6 +14,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
